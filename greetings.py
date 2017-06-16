@@ -12,5 +12,6 @@ parser.add_argument("--lastname", help="person last name",type=str,required=True
 
 args = parser.parse_args()
 
-print ("Current Date: %s" % datetime.datetime.now().strftime('%d/%m/%Y'))
-print("Welcome, %s %s\n" % (args.firstname,args.lastname))
+print ("\Current Date: %s" % datetime.datetime.now().strftime('%d/%m/%Y'))
+print ("Current Time: %s" % datetime.datetime.now().strftime('%H:%M:%S %p'))
+print("\nWelcome, %s %s\n" % (args.firstname,args.lastname))
