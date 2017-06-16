@@ -6,9 +6,9 @@ import argparse
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-n", "--name", help="person full name",type=str,required=True)
+parser.add_argument("--firstname", help="person first name",type=str,required=True)
+parser.add_argument("--lastname", help="person last name",type=str,required=True)
 
 args = parser.parse_args()
 
-if args.name:
-    print("Welcome, %s\n" % args.name)
+print("Welcome, %s %s\n" % (args.firstname,args.lastname))
