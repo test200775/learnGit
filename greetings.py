@@ -18,3 +18,8 @@ print ("Current Date: %s" % datetime.datetime.now().strftime('%d/%m/%Y'))
 print ("Current Time: %s" % datetime.datetime.now().strftime('%H:%M:%S %p'))
 print ("***********************************")
 print("\nWelcome, %s %s." % (args.firstname,args.lastname))
+
+userResponse = raw_input ("How can I help you today?")
+
+if userResponse is not None:
+    print ("Your with is my command :) ...")
