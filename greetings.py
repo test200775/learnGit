@@ -24,5 +24,5 @@ userResponse = raw_input ("How can I help you today?")
 if userResponse is not None:
     print ("Your with is my command :) ...")
 
-if userResponse.address is not None:
-    print ("Your home address is: %s" % userResponse.address)
+if args.address is not None:
+    print ("Your home address is: %s" % args.address)
