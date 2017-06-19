@@ -11,6 +11,7 @@ parser.add_argument("--firstname", help="person first name",type=str,required=Tr
 parser.add_argument("--lastname", help="person last name",type=str,required=True)
 parser.add_argument("--address", help="person home address",type=str, default=None, required=False)
 parser.add_argument("--phone", help="person phone number",type=str, default=None, required=False)
+parser.add_argument("--state", help="person state of origin",type=str, default=None, required=False)
 
 args = parser.parse_args()
 
